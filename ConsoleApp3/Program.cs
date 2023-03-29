@@ -21,12 +21,43 @@ class Program
         {
             //SUMA
             Console.WriteLine("Seleccione un valor A");
-            string sum = Console.ReadLine();
+            string res = Console.ReadLine();
             Console.WriteLine("Seleccione un valor B");
-            string sum2 = Console.ReadLine();
-            int result = Suma(sum, sum2);
-            Console.WriteLine($"El resultado entre la suma de {sum} y {sum2} es {result}");
+            string res2 = Console.ReadLine();
+            int result = Suma(res, res2);
+            Console.WriteLine($"El resultado de la suma entre {res} y {res2} es {result}");
         }
+        if (response == btnResta)
+        {
+            //Resta
+            Console.WriteLine("Seleccione un valor A");
+            string res = Console.ReadLine();
+            Console.WriteLine("Seleccione un valor B");
+            string res2 = Console.ReadLine();
+            int result = Resta(res, res2);
+            Console.WriteLine($"El resultado de la resta entre {res} y {res2} es {result}");
+        }
+        if (response == btnMulti)
+        {
+            //Multiplicacion
+            Console.WriteLine("Seleccione un valor A");
+            string res = Console.ReadLine();
+            Console.WriteLine("Seleccione un valor B");
+            string res2 = Console.ReadLine();
+            int result = Multiplicacion(res, res2);
+            Console.WriteLine($"El resultado de la multiplicacion entre {res} y {res2} es {result}");
+        }
+        if (response == btnDiv)
+        {
+            //Division
+            Console.WriteLine("Seleccione un valor A");
+            string res = Console.ReadLine();
+            Console.WriteLine("Seleccione un valor B");
+            string res2 = Console.ReadLine();
+            int result = Division(res, res2);
+            Console.WriteLine($"El resultado de la division entre {res} y {res2} es {result}");
+        }
+
 
 
 
